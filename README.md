@@ -1,55 +1,38 @@
-# Predictive Maintenance Dashboard – Power BI Asset Health Project
+# Power BI Predictive Maintenance Dashboard
 
-This project is a Power BI dashboard built to explore how industrial sensor data can be used to support predictive maintenance, equipment risk monitoring and asset health reporting.
+This is a Power BI project I created to practise working with sensor data, asset health analysis and predictive maintenance reporting.
 
-I developed this project to strengthen my experience with Power BI, Power Query and engineering-style data analysis. The dashboard uses industrial water pump sensor readings to identify equipment risk indicators and present the results in a clear, visual format for non-technical users.
+The dashboard uses industrial water pump sensor readings to look at equipment condition and Remaining Useful Life (RUL). I wanted to build something that was closer to real operational data, rather than just doing a general dashboard project.
 
-## Project Overview
-
-The dashboard analyses over **166,000 sensor readings** from industrial water pump equipment. The aim was to clean and structure raw sensor data, group equipment readings into risk bands, and identify which sensor values were most strongly linked to a decrease in Remaining Useful Life (RUL).
-
-This project is designed to reflect the type of data analysis used in operational and maintenance environments, where data can support better decisions around equipment condition, asset health and maintenance prioritisation.
-
-## Dashboard Preview
+## Dashboard
 
 ![Power BI Dashboard Overview](screenshots/dashboard_overview.png)
 
-## Key Features
+## What I worked on
 
-- Cleaned and prepared raw sensor data using **Power Query**
-- Audited over **50 raw sensor variables** and removed non-predictive flat-lined sensors
-- Created calculated risk bands to classify readings as **Healthy**, **Warning** or **Critical**
-- Built KPI cards to show average Remaining Useful Life, lowest recorded RUL and total readings analysed
-- Used trend charts and scatter plots to explore relationships between sensor readings and RUL
-- Applied Power BI's **Key Influencers** feature to identify readings linked to equipment failure risk
-- Presented findings in a clear dashboard format suitable for technical and non-technical audiences
+- Cleaned and prepared the sensor data using Power Query
+- Checked the dataset for flat-lined and non-useful sensor variables
+- Worked with over 166,000 sensor readings
+- Created risk bands to group readings into Healthy, Warning and Critical
+- Built KPI cards, trend charts, a scatter chart and a risk breakdown chart
+- Used Power BI’s Key Influencers feature to explore which sensor readings were linked to a decrease in Remaining Useful Life
+- Presented the results in a dashboard format so the main equipment health indicators were easier to understand
 
-## Main Findings
+## Main findings
 
-- The dataset contained **166,000+ sensor readings**
-- **34.9%** of readings fell into the Critical risk band
-- Key Influencers analysis highlighted specific sensor ranges linked to a decrease in Remaining Useful Life
-- The dashboard helped translate large volumes of sensor data into clearer asset health insight
+One of the main findings was that around 34.9% of the sensor readings fell into the Critical risk band. The Key Influencers visual also helped identify sensor ranges that were linked to a lower Remaining Useful Life.
 
-## Tools Used
+This helped me understand how dashboarding can be used for more than just showing data. It can also help highlight risk, support maintenance decisions and make large datasets easier to interpret.
+
+## Tools used
 
 - Power BI
 - Power Query
-- DAX / calculated columns
+- Calculated columns
+- Key Influencers visual
 - Data cleaning
 - Data visualisation
-- Key Influencers analysis
-
-## Skills Demonstrated
-
-- Data cleaning and preparation
-- Dashboard design
-- Asset health and predictive maintenance analysis
-- Working with large sensor datasets
-- Interpreting equipment risk indicators
-- Communicating technical findings clearly
-- Turning raw operational data into practical insight
 
 ## Note
 
-The full dataset and Power BI file are not included because of file size limitations. This repository includes a dashboard screenshot and a summary of the project approach, methods and findings.
+The full Power BI file and dataset are not included because of file size limits. This repository includes a screenshot of the dashboard and a summary of the project.
